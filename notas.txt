@@ -1,0 +1,7 @@
+pasos para hacer un crud en laravel
+1 crear el proyecto con composer: create-project laravel/laravel nombre_del_proyecto
+2 conectar con base de datos: activar apache y mysql
+3 controlar migraciones
+4 crear migraciones
+5 crear el controlador y el modelo: puedo hacer todo con una linea de comando: php artisan make:controller TaskController -- resource --model=Task
+6 CREAR FUNCIONALIDADES: CREATE

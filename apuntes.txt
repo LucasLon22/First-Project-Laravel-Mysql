@@ -1,0 +1,53 @@
+apuntes laravel
+artisan: es la herramienta de lineas de comando que permiten a los desarrolladores a ahorra tiempo, se usa para crear controladores por ejemplo
+
+todo el desarrollo web consiste en dos conceptos:
+- request (peticion)
+- response (respuesta)
+
+DINAMICA BASICA DE LARAVEL
+
+ESCRIBES UNA RUTA -> LA RUTA CONECTA CON UN CONTROLADOR -> EL CONTROLADOR CONSULTA CON LA BASE DE DATOS SI ES NECESARIO -> LA BD NOS RETORNA LOS DATOS -> Y ASI SE RETORNA LA RESPUESTA
+
+CONTROLADOR: NOS SIRVE PARA ESTRUCTURAR Y FORMATEAR EL CODIGO QUE SERÁ PARTE DE LA RESPUESTA. UN CONTROLADOR ES UN INTERMEDIARIO ENTRE LA request QUE HACE EL USUARIO Y LA RESPONSE.
+
+BLADE: ES EL MOTOR DE PLANTILLAS DE LARAVEL
+
+nos quedamos en minutos 16.33
+
+para iniciar el proyecto en el servidor es el comando php artisan serve
+
+
+BASE DE DATO
+aactive apache y mysql y anduvo
+
+.env: archivo de configuracion que se utiliza para almacenar informacion sensible y personalizable sobre la app
+
+migraciones: PERMITEN A LOS DESARROLLADORES CREAR, MODIFICAR Y ELIMINAR TABLAS Y COLUMNAS EN LA BASE DE DATOS DE MANERA ORGANIZADA Y CONTROLADA, LAS MISMAS SE GUARDAN EN CARPETA database, para que las migraciones generen un efecto o funciones lo que hay que hacer es ejecutar en el cmd con el comando php artisan migrate Y PARA DESHACER ESO EL COMANDO php artisan migrate:rollback
+en las migraciones los tipos de datos deben ser dato que sean equivalentes en la base de datos
+
+MODELO: UN MODELO ES UNA CLASE QUE REPRESENTA UNA TABLA EN LA BASE DE DATOS Y PERMITE AL DESARROLLADOR INTERACTUAR CON ESTA TABLA
+
+ELOQUENT: ES EL ORM QUE UTILIZA LARAVEL PARA INTERACTUAR CON LAS BD. EN LUGAR DE USAR SQL DIRECTAMENTE, NOSOTROS USAMOS LA SINTAXIS DE PHP PARA HACER CONSULTAS.
+
+PARA CREAR UN PROYECTO CON COMPOSER :
+composer create-project laravel/laravel nombre_del_proyecto
+
+php artisan make:controller TaskController --resource --model=Task commando para llamar un controlador para crud.
+
+LAYOUT: EN LARAVEL ES UNA PLANTILLA BASE QUE DEFINE LA ESTRUCTURA Y DISEÑO COMUN DE VARIAS PAGINAS EN UNA APLICACION WEB.PERMITE REUTILIZAR ELEMENTOS DE DISEÑO Y CODIGO COMO ENCABEZADOS, MENU PIE DE PAGINA EN MULTIPLES VISTAS SIN TENER QUE REPETIR EL MISMO CODIGO EN CADA UNA
+
+BOOTSTRAP EN PHP SE IMPORTA CON EL CODIGO DE JAVASCRIPT
+
+
+@endsection: es lo que va a tomar lugar en el yield de base.blade.php
+
+FUNCIONALIDADES
+CREAR O CREATE
+
+TOKEN CRSF PARA EVITAR ATAQUES, ES UN VALOR UNICO QUE OTORGA A UN FORMULARIO, UNICAMENTE SE AGREGA EL TOKEN UTILIZANDO UNA DIRECTIVA BLADE = @CSRF
+
+error asignacion masiva, cuando 
+
+//paginador: para no tener que mostrar todo sino una cierta cantidad
+
